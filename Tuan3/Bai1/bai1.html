@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bai1.css">
+</head>
+<body>
+    <div id = "k1">
+        <nav id="header">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <h1>Sky World</h1>
+            </ul>
+        </nav>
+        <section>
+            <div class="par">
+                <h2>Registration Information</h2>
+                <p>
+                    Start your travel planning now with our on-line tour regstration
+                    form. Just tell us a little about yourself and your group and one of our travel
+                    experts will contact you to create the perfect custom built for your group's needs .
+                </p>
+                
+                    <div class="Row">
+                        <label for="" class="Col">Title</label>
+                        <label for="i1" class="Col">Full Name*</label>
+                        <label for="i2" class="Col">Mailing Address</label>
+                        <label for="i3" class="Col">City</label>
+                        <label for="i4" class="Col">Coutry</label>
+                        <label for="Questions" class="Col">Specific Questions or requests about your tour</label>
+                    </div>
+
+                    <div class="Row">
+                        <form action="./bai1.html" method="get">
+                        <form class="Col">
+                            <select name="Gender" id="Gender" size="1">
+                                <option value="Man">Man</option>
+                                <option value="Women">Women</option>
+                                <option value="Orther">Orther</option>
+                            </select>
+                        </form>
+                        <input type="text" placeholder="Full Name*" class="Col"id="i1">
+                        <input type="mail" placeholder="Mailing Address" class="Col"name="" id="i2">
+                        <input type="text"  placeholder="City" class="Col"id="i3">
+                        <input type="text" placeholder="Coutry"class="Col" id="i4">
+                        <textarea class="Col" rows="10" id="Questions" placeholder="Specific Questions or requests about your tour"></textarea>
+                        <input id="inp" type="submit" value="Submit">
+                        <input id="res" type="reset" value="Reset">
+                        </form>
+                    </div>
+
+                    
+                
+            </div>
+        </section>
+        <aside id="Title-img">
+            <img src="./sky.png" alt="">
+            <h1 >Your've arrived.</h1>
+            <h2 >Journeys as great as the destinations.</h2>
+        </aside>
+        <footer>
+            <p>2016 Sky World Tours. All rights reserved.</p>
+            <p>Contact information: Student Name | StudentID | Testing Date</p>
+        </footer>
+    </div>
+</body>
+</html>

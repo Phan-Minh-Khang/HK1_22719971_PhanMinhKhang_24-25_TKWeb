@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+#k1 {
+    width: 1300px;
+    height: 860px;
+    boder: 1px solid lightblue;
+    background-image: linear-gradient(lightblue, rgb(115, 179, 211), rgb(56, 146, 219));
+}
+
+nav {
+    /* clear: both; */
+    width: 100px;
+    display: contents;
+    height: 100%;
+    border-bottom: 3px dotted whitesmoke;
+}
+
+nav ul li {
+    
+    display: inline;
+    padding-left: 20px;
+    line-height: 80px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+#header h1 {
+
+    position: absolute;
+    right: 400px;
+    top: 20px;
+    color: white;
+    text-shadow: 5px 5px 5px darkblue;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    float: left;
+    width: 50%;
+    height: 700px;
+    border-top: 3px dotted white;
+}
+.par p{
+    padding-top: 20px;
+}
+
+.par{
+    color: antiquewhite;
+    margin-left: 5px;
+}
+
+.Row{
+    width: 30%;
+    margin-left: 5%;
+    display:inline-table
+}
+input[type="text"]{
+    width: 300px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+#inp,#res{
+    width: 80px;
+}
+
+.Row label{
+    vertical-align: middle;
+    display: block;
+}
+.Col{
+    margin-top: 15px;
+    padding-top: 10px;
+    vertical-align: middle;
+}
+
+#Questions{
+    height: 10lh;
+    width: 300px;
+}
+aside {
+    float: right;
+    border-top: 3px dotted white;
+    width: 50%;
+    height: 600px;
+}
+
+img{
+    height: 350px;
+    margin: 10%;
+}
+
+#Title-img h1{
+    padding-left: 30%;
+    font-size: 3em;
+    text-shadow:  10 10 10 rgb(12, 12, 61);
+}
+#Title-img h2{
+    padding-left: 40%;
+}
+#Title-img{
+    color: darkblue
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    height: 198px;
+    border-top: 3px dotted white;
+    text-align: center;
+    color: aliceblue;
+}
+footer p{
+    vertical-align: bottom;
+    text-decoration: wavy;
+}
