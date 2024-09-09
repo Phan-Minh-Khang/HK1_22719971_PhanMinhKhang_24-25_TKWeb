@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Electronics Registration Form</title>
+    <style>
+        body {
+            background-color: #b0c4de;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        .form-group label {
+            width: 150px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            flex: 1;
+            padding: 5px;
+        }
+        .form-group input[type="checkbox"],
+        .form-group input[type="radio"] {
+            flex: 0;
+            margin: 0 10px 0 0;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <div class="header">
+        <h1>Jackson Electronics</h1>
+        <h2>Registration Form</h2>
+    </div>
+    
+    <form action="#">
+        <p style="text-align: center;">Register your Jackson Electronics product here</p>
+
+        <!-- First and Last Name -->
+        <div class="form-group">
+            First Name:
+            <input type="text" id="firstName" name="firstName">
+            Last Name:
+            <input type="text" id="lastName" name="lastName">
+        </div>
+
+        <!-- Address Fields -->
+        <div class="form-group">
+            <label for="address1">Address #1:</label>
+            <input type="text" id="address1" name="address1">
+        </div>
+        <div class="form-group">
+            <label for="address2">Address #2:</label>
+            <input type="text" id="address2" name="address2">
+        </div>
+
+        <!-- City, State, Zip -->
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+            <label for="state" style="margin-left: 20px;">State:</label>
+            <input type="text" id="state" name="state">
+            <label for="zip" style="margin-left: 20px;">Zip:</label>
+            <input type="text" id="zip" name="zip">
+        </div>
+
+        <!-- Country -->
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="United States">United States</option>
+                <!-- Add more countries as needed -->
+            </select>
+        </div>
+        <hr />
+        <!-- Product and Date Purchased -->
+        <div class="form-group">
+            <label for="product">Product:</label>
+            <select id="product" name="product">
+                <option value="ScanMaster">ScanMaster</option>
+                <!-- Add more products as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="datePurchased">Date Purchased:</label>
+            <input type="date" id="datePurchased" name="datePurchased">
+        </div>
+
+        <!-- Serial Number -->
+        <div class="form-group">
+            <label for="serial">Serial #:</label>
+            <input type="text" id="serial" name="serial">
+        </div>
+
+        <!-- Used For Options -->
+        <div class="form-group">
+            <label>Used for:</label>
+            Home
+            <input type="radio" name="usedFor" value="Home">
+            Educational Institution
+            <input type="radio" name="usedFor" value="Educational Institution">
+            Business
+            <input type="radio" name="usedFor" value="Business">
+            Government
+            <input type="radio" name="usedFor" value="Government">
+            Other
+            <input type="radio" name="usedFor" value="Other">
+        </div>
+
+        <!-- System Checkboxes -->
+        <div class="form-group">
+            <label>System (check all that apply):</label>
+            Windows
+            <input type="checkbox" id="macintosh" name="system" value="Macintosh">
+            Macintosh
+            <input type="checkbox" id="unix" name="system" value="UNIX">
+            UNIX
+            <input type="checkbox" id="otherSystem" name="system" value="Other">
+            Other
+            <input type="checkbox" id="windows" name="system" value="Windows">
+        </div>
+        <hr/>
+        <!-- Comments -->
+        <div>
+            Comments?
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </div>
+
+        <!-- Submit Buttons -->
+        <div style="align-items: center;">
+            <input type="submit" value="Click to register">
+            <input type="reset" value="Click to cancel">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
