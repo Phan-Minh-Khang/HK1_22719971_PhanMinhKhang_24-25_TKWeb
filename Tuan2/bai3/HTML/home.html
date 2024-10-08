@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Acres</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-image: url('../img/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        
+        header {
+            background-color: rgba(255, 255, 255, 0);
+            padding: 10px;
+            overflow: hidden;
+        }
+        
+        .main-content {
+            display: flex;
+            position: relative;
+        }
+        
+        .logo {
+            float: left;
+            color: #4CAF50;
+            font-size: 30px;
+            font-weight: bold;
+            position: relative;
+            /* Nếu cần điều chỉnh vị trí chính xác */
+            left: -10px;
+            /* Điều chỉnh vị trí sang trái */
+        }
+        
+        nav {
+            width: 150px;
+            float: left;
+            background-color: rgb(252, 247, 247);
+            padding: 10px;
+            box-shadow: 2px 2px 0 rgba(255, 255, 255, 0.7), /* Lớp viền trắng đầu tiên */
+            4px 4px 0 rgba(255, 255, 255, 0.7), /* Lớp viền trắng tiếp theo */
+            6px 6px 0 rgba(181, 176, 176, 0.497), /* Lớp viền trắng thứ ba */
+            8px 8px 0 rgba(178, 176, 176, 0.7), /* Lớp viền trắng thứ tư */
+            10px 10px 0 rgba(125, 121, 121, 0.7), /* Lớp viền trắng cuối cùng */
+            12px 12px 15px rgba(120, 118, 118, 0.25);
+            /* Đổ bóng mờ nhẹ để tạo chiều sâu */
+            ;
+        }
+        
+        nav a {
+            display: block;
+            color: #7e2509;
+            text-decoration: none;
+            margin-bottom: 10px;
+            padding: 5px;
+            /* Thêm khoảng cách cho liên kết */
+            transition: background-color 0.3s;
+            /* Hiệu ứng chuyển màu nền khi hover */
+        }
+        
+        nav a:hover {
+            background-color: rgba(126, 37, 9, 0.2);
+            /* Màu nền khi hover */
+        }
+        
+        .content {
+            margin-left: 190px;
+            margin-right: 150px;
+            /* Tạo khoảng trống cho ảnh táo */
+            padding: 10px;
+            border-left: #4CAF50 1px solid;
+        }
+        
+        .vertical-line {
+            width: 2px;
+            background-color: #11ec19;
+            margin: 0 10px;
+        }
+        
+        .welcome {
+            background-color: #09e213;
+            /* Màu xanh sáng hơn */
+            height: 50px;
+            width: 95%;
+            /* Điều chỉnh chiều cao */
+            color: #fff;
+            padding: 5px 0;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 20px;
+            /* Tăng kích thước chữ */
+            font-weight: bold;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+        }
+        
+        .welcome span h2 {
+            display: inline-block;
+            padding: 0 10px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            margin-top: 10px;
+        }
+        
+        .hours h3 {
+            background-color: #0dec15;
+            width: 70%;
+            padding: 1px;
+            margin-top: 10px;
+        }
+        
+        .directions h3 {
+            background-color: #0edc15;
+            width: 70%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        footer {
+            clear: both;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            font-size: 12px;
+            border-top: 2px solid #4CAF50;
+            margin-top: 20px;
+        }
+        
+        .apple-image {
+            position: absolute;
+            top: 220px;
+            /* Điều chỉnh vị trí theo ý muốn */
+            right: 40px;
+            /* Điều chỉnh để tránh đè lên đường kẻ */
+            width: 130px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <img src="../img/salogo.jpg" alt="Sunny Acres Logo">
+            </div>
+
+        </header>
+        <div class="main-content"></div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="maze.html">The Corn Maze</a>
+            <a href="hauntt.html">The Haunted Maze</a>
+            <a href="petting.html">Petting Barn</a>
+            <a href="produce.html">Produce</a>
+        </nav>
+        <div class="vertical-line"></div>
+        <div class="divider"></div>
+        <!-- Đường kẻ dọc -->
+        <div class="content">
+            <div class="welcome">
+                <span>
+                    <h2>Wel Come</h2>
+                </span>
+            </div>
+            <p>Welcome to the home page of our family farm, Sunny Acres, where there's always something happening. With the coming of fall, we're gearing up for our big Autumn Fest and Farm Show. If you haven't visited our famous Corn Maze, be sure to do
+                so before it gets torn down on November 5. This year's maze is bigger and better than ever.</p>
+            <p>Farms can be educational and Sunny Acres is no exception. Schools and home-schooling parents, take an afternoon with us at our Petting Barn. We have over 100 friendly farm animals in a clean environment. Kids can bottle feed the baby goats,
+                lambs, and calves while they learn about nature and the farming life. Please call ahead for large school groups.</p>
+            <p>When the sun goes down this time of year, we're all looking for a good fright. Sunny Acres provides that too with another year of the Haunted Maze. Please plan on joining us during weekends in October or on Halloween for our big Halloween
+                Festival.
+            </p>
+            <p>Of course, Sunny Acres is above all, a farm. Our Farm Shop is always open with reasonable prices and great produce. Save even more money by picking your own fruits and vegetables from our orchards and gardens.</p>
+            <p>We all hope to see you soon, down on the farm!</p>
+            <p>Tammy & Brent Nielsen</p>
+            <div class="hours">
+                <h3>Hours</h3>
+                <ul>
+                    <li>Farm Shop: 9 am - 5 pm Mon.-Fri, 9 am - 3 pm Sat</li>
+                    <li>The Corn Maze: 11 am - 9 pm Sat, 11 am - 5 pm Sun</li>
+                    <li>The Haunted Maze: 5 pm - 9 pm Fri & Sat</li>
+                    <li>Petting Barn: 9 am - 4 pm (Mon.-Fri), 11 am - 3pm (Sat & Sun)</li>
+                </ul>
+            </div>
+            <div class="directions">
+                <h3>Directions</h3>
+                <ul>
+                    <li>From Council Bluffs, proceed east on I-80</li>
+                    <li>Take Exit 38 North to the Drake Frontage Road</li>
+                    <li>Turn right on Highway G</li>
+                    <li>Proceed east for 2.5 miles</li>
+                    <li>Sunny Acres is on your left, watch for the green sign</li>
+                </ul>
+            </div>
+        </div>
+        <div class="apple-image">
+            <img src="../img/photo1.jpg" alt="Apple">
+        </div>
+
+        <footer>
+            Sunny Acres • Tammy & Brent Nielsen • 1977 Highway G • Council Bluffs, IA 51503
+        </footer>
+    </div>
+</body>
+
+</html>

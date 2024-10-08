@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Scrapbooks</title>
+    <style>
+        .container {
+            width: 1089px;
+            height: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        
+        header {
+            width: 1089px;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            overflow: hidden;
+        }
+        
+        nav {
+            width: 150px;
+            float: left;
+            background-color: rgb(252, 247, 247);
+            padding: 10px;
+        }
+        
+        nav a {
+            display: block;
+            color: #7e2509;
+            text-decoration: none;
+            margin-bottom: 10px;
+            padding: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: rgba(126, 37, 9, 0.2);
+        }
+        
+        .content {
+            margin-left: 190px;
+            margin-right: 250px;
+            padding: 10px;
+            border-left: #4CAF50 1px solid;
+            border-top: #ff8c00;
+        }
+        
+        .logo {
+            float: right;
+            color: #4CAF50;
+            font-size: 30px;
+            font-weight: bold;
+            position: relative;
+            left: -10px;
+        }
+        
+        #main-container {
+            display: flex;
+            margin-top: 10px;
+        }
+        
+        #sidebar {
+            width: 200px;
+            background-color: #f0e0c0;
+            padding: 20px;
+        }
+        
+        #menu {
+            background-color: #f9e7c9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            background-image: url(../img/back.jpg);
+        }
+        
+        #menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        #menu ul li {
+            margin-bottom: 5px;
+        }
+        
+        #content {
+            flex: 1;
+            padding: 20px;
+            margin-top: 10px;
+        }
+        
+        h1 {
+            color: #ff8c00;
+            margin: 0;
+        }
+        
+        #basic-materials {
+            background-color: #fffaf0;
+            border: 1px solid #ffa500;
+            padding: 10px;
+            width: 200px;
+            position: absolute;
+            right: 40px;
+            top: 220px;
+        }
+        
+        #basic-materials h3 {
+            margin-top: 0;
+            color: #ff8c00;
+        }
+        
+        #basic-materials ul {
+            padding-left: 20px;
+        }
+        
+        footer {
+            clear: both;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            font-size: 12px;
+            border-top: 2px solid #4CAF50;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="../img/scraps.jpg" alt="Sunny Acres Logo">
+            </div>
+        </header>
+
+        <nav>
+            <div id="main-container">
+                <div id="sidebar">
+                    <div id="menu">
+                        <ul>
+                            <li>Home</li>
+                            <li>Getting Started</li>
+                            <li>Scrapbooking Tips</li>
+                            <li>Supply List</li>
+                            <li>Online Classes</li>
+                            <li>Sample Pages</li>
+                            <li>Online Store</li>
+                            <li>Shopping Cart</li>
+                            <li>Checkout</li>
+                            <li>Your Account</li>
+                            <li>Order Status</li>
+                            <li>Wish List</li>
+                            <li>Customer Service</li>
+                            <li>About Us</li>
+                            <li>Newsletter</li>
+                            <li>FAQ</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+
+        <div class="content">
+            <div class="welcome">
+                <h2>Welcome</h2>
+            </div>
+            <p>Welcome to the home page of our family farm, Sunny Acres, where there's always something happening. With the coming of fall, we're gearing up for our big Autumn Fest and Farm Show. If you haven't visited our famous Corn Maze, be sure to do
+                so before it gets torn down on November 5. This year's maze is bigger and better than ever.</p>
+            <p>Farms can be educational and Sunny Acres is no exception. Schools and home-schooling parents, take an afternoon with us at our Petting Barn. We have over 100 friendly farm animals in a clean environment. Kids can bottle feed the baby goats,
+                lambs, and calves while they learn about nature and the farming life. Please call ahead for large school groups.</p>
+            <p>When the sun goes down this time of year, we're all looking for a good fright. Sunny Acres provides that too with another year of the Haunted Maze. Please plan on joining us during weekends in October or on Halloween for our big Halloween
+                Festival.
+            </p>
+            <p>Of course, Sunny Acres is above all, a farm. Our Farm Shop is always open with reasonable prices and great produce. Save even more money by picking your own fruits and vegetables from our orchards and gardens.</p>
+            <p>We all hope to see you soon, down on the farm!</p>
+            <p>Tammy & Brent Nielsen</p>
+            <div class="hours">
+                <h3>Hours</h3>
+                <ul>
+                    <li>Farm Shop: 9 am - 5 pm Mon.-Fri, 9 am - 3 pm Sat</li>
+                    <li>The Corn Maze: 11 am - 9 pm Sat, 11 am - 5 pm Sun</li>
+                    <li>The Haunted Maze: 5 pm - 9 pm Fri & Sat</li>
+                    <li>Petting Barn: 9 am - 4 pm (Mon.-Fri), 11 am - 3pm (Sat & Sun)</li>
+                </ul>
+            </div>
+            <div class="directions">
+                <h3>Directions</h3>
+                <ul>
+                    <li>From Council Bluffs, proceed east on I-80</li>
+                    <li>Take Exit 38 North to the Drake Frontage Road</li>
+                    <li>Turn right on Highway G</li>
+                    <li>Proceed east for 2.5 miles</li>
+                    <li>Sunny Acres is on your left, watch for the green sign</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="basic-materials">
+            <h3>Basic Materials</h3>
+            <ul>
+                <li>Acid-free paper, card stock, and stickers</li>
+                <li>Acid-free pens, markers, and adhesives</li>
+                <li>Acid-free memory book album</li>
+                <li>Straight and pattern edge scissors</li>
+                <li>Photos and photo corners</li>
+                <li>Paper punches</li>
+                <li>Journaling templates</li>
+                <li>Decorative embellishments</li>
+            </ul>
+        </div>
+
+        <footer>
+            Sunny Acres • Tammy & Brent Nielsen • 1977 Highway G • Council Bluffs, IA 51503
+        </footer>
+        </div>
+</body>
+
+</html>
