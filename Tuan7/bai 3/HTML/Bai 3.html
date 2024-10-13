@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form with Table</title>
+    <link rel="stylesheet" href="../CSS/bai3.css">
+    <script>
+        function validateForm() {
+            let isValid = true;
+            document.querySelectorAll('.error').forEach(el => el.innerHTML = '');
+            let fullName = document.forms["registerForm"]["fullName"].value;
+            let username = document.forms["registerForm"]["username"].value;
+            let password = document.forms["registerForm"]["password"].value;
+            let confirmPassword = document.forms["registerForm"]["confirmPassword"].value;
+            let phone = document.forms["registerForm"]["phone"].value;
+            let email = document.forms["registerForm"]["email"].value;
+
+            if (fullName === "") {
+                document.getElementById("nameError").innerHTML = "Họ và tên là bắt buộc!";
+                isValid = false;
+            }
+
+            if (username === "") {
+                document.getElementById("usernameError").innerHTML = "Tên đăng nhập là bắt buộc!";
+                isValid = false;
+            } else if (username.length < 6) {
+                document.getElementById("usernameError").innerHTML = "Tên đăng nhập phải ít nhất 6 ký tự!";
+                isValid = false;
+            }
+
+            if (password === "") {
+                document.getElementById("passwordError").innerHTML = "Mật khẩu là bắt buộc!";
+                isValid = false;
+            }
+
+            if (confirmPassword === "") {
+                document.getElementById("confirmPasswordError").innerHTML = "Xác nhận mật khẩu là bắt buộc!";
+                isValid = false;
+            } else if (password !== confirmPassword) {
+                document.getElementById("confirmPasswordError").innerHTML = "Mật khẩu và xác nhận mật khẩu không khớp!";
+                isValid = false;
+            }
+
+            if (phone === "") {
+                document.getElementById("phoneError").innerHTML = "Số điện thoại là bắt buộc!";
+                isValid = false;
+            } else if (!/^\d+$/.test(phone)) {
+                document.getElementById("phoneError").innerHTML = "Số điện thoại phải là số!";
+                isValid = false;
+            }
+
+            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email === "") {
+                document.getElementById("emailError").innerHTML = "Email là bắt buộc!";
+                isValid = false;
+            } else if (!emailRegex.test(email)) {
+                document.getElementById("emailError").innerHTML = "Email không hợp lệ!";
+                isValid = false;
+            }
+
+            if (isValid) {
+                window.location.href = "thongtin.html";
+            }
+
+            return isValid;
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-title">Register Form</div>
+        <form name="registerForm" onsubmit="return validateForm()">
+            <table>
+                <tr>
+                    <td><label for="fullName">Họ và tên (*):</label></td>
+                    <td><input type="text" id="fullName" name="fullName"></td>
+                </tr>
+                <tr>
+
+                    <div id="nameError" class="error"></div>
+
+                </tr>
+
+                <tr>
+                    <td><label for="username">Tên Đăng nhập (*):</label></td>
+                    <td><input type="text" id="username" name="username"></td>
+                </tr>
+
+                <div id="usernameError" class="error">
+
+                    <tr>
+                        <td><label for="password">Mật khẩu (*):</label></td>
+                        <td><input type="password" id="password" name="password"></td>
+                    </tr>
+
+                    <div id="passwordError" class="error">
+
+                        <tr>
+                            <td><label for="confirmPassword">Xác nhận mật khẩu (*):</label></td>
+                            <td><input type="password" id="confirmPassword" name="confirmPassword"></td>
+                        </tr>
+
+                        <div id="confirmPasswordError" class="error">
+
+                            <tr>
+                                <td><label>Ngày sinh:</label></td>
+                                <td>
+                                    <div class="slct">
+                                        <input type="number" value="1" min="1" max="31"><span style="color: rgb(62, 62, 169);">Tháng:</span>
+                                        <input type="number" value="1" min="1" max="12"><span style="color: rgb(62, 62, 169);">Năm:</span>
+                                        <input type="number" value="1940" max="2024" style="width: 60px;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="phone">Điện thoại:</label></td>
+                                <td><input type="text" id="phone" name="phone"></td>
+                            </tr>
+                            <tr>
+                                <div id="phoneError" class="error"></div>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email khác:</label></td>
+                                <td><input type="text" id="email" name="email"></td>
+                            </tr>
+                            <tr>
+
+                                <div id="emailError" class="error"></div>
+
+                            </tr>
+                            <tr>
+                                <td><label for="hobby">Sở thích:</label></td>
+                                <td>
+                                    <input type="text" value="ca nhạc">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button type="submit">Đăng Ký</button>
+                                    <button type="reset">Hủy</button>
+                                </td>
+                            </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>

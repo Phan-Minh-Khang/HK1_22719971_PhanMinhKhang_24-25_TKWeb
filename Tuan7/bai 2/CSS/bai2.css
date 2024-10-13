@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.header {
+    background: url('../PNG/banner_car.jpg') no-repeat center center;
+    height: 150px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.market-news,
+.price-update,
+.price-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 30%;
+}
+
+.market-news table,
+.price-update table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.market-news th,
+.market-news td,
+.price-update th,
+.price-update td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+}
+
+.market-news th,
+.price-update th {
+    background-color: #f0f0f0;
+    color: blue;
+}
+
+.price-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.price-list li {
+    color: blue;
+    margin-bottom: 5px;
+}
+
+.price-list img {
+    width: 100%;
+    height: auto;
+}
+
+.price-list .price {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.price-update input[type="text"],
+.price-update select {
+    width: calc(100% - 12px);
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.price-update input[type="radio"] {
+    margin-right: 5px;
+}
+
+.price-update input[type="button"] {
+    padding: 5px 10px;
+    margin-right: 5px;
+}

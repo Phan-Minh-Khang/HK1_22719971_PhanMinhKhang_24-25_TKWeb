@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #90ee90;
+    background-color: #f0fff0;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgb(62, 62, 169);
+}
+
+label {
+    color: rgb(62, 62, 169);
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+table td:first-child {
+    text-align: right;
+    width: 30%;
+}
+
+button {
+    border-radius: 3px;
+}
+
+input {
+    width: 65%;
+    box-sizing: border-box;
+}
+
+.slct {
+    width: 60px;
+    border-radius: 5px;
+}
