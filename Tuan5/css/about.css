@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+bodY{
+    overflow: hidden;
+}
+
+header{
+    background-image: url(../images/hero-bg.jpg);
+}
+
+header .menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 15px;
+    position: relative;
+    left: 100px;
+    width: 40%;
+}
+header .text-header{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+header ul li a:hover{
+    color: yellow;
+    text-decoration: none;
+}
+.btn{
+    border-radius: 25px !important; 
+    color: white !important;
+}
+header .icon-order i{
+    margin-right: 8px;
+    color: white;
+}
+header .icon-order i:hover{
+    color: yellow;
+}
+.moldalFom{
+    border-radius: 15px !important;
+    border-color: rgb(218, 218, 6) !important;
+}
+img{
+    height: 65%;
+    object-fit: cover;
+    display: inline-block;
+    float:right;
+}
+.colRight{
+    display: flex;
+    align-items: center;
+}

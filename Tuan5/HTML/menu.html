@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var links = document.querySelectorAll('.container .select-menu ul li a');
+            links.forEach((e)=>{
+                e.addEventListener('click', function() {
+                    links.forEach(function(item) {
+                        item.classList.remove('active');
+                    });
+                    e.classList.add('active');
+                    
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container navbar ">
+            <a class="navbar-brand text-header" href="Home.html">Feane</a>
+    
+            <ul class="menu">
+                <li><a href="Home.html"> HOME </a></li>
+                <li><a href="menu.html" > MENU </a></li>
+                <li><a href="about.html"> ABOUT </a></li>
+                <li><a href="book.html"> BOOK TABLE </a></li>
+            </ul>
+    
+            <div class="icon-order">
+                <i class="fa fa-user"></i>
+                <i class="fa fa-shopping-cart" ></i>
+                <i class="fa fa-search"></i>
+                <button class="orderOnl btn btn-warning px-4" data-bs-toggle="modal" data-bs-target="#myModal">Order Online</button>
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title text-warning" style="font-family: 'Dancing Script', cursive;">Order</h4>
+                                <button type="button" class="border-2 border-dark" data-bs-dismiss="modal"><i class="fa fa-close text-dark"></i></button>
+                            </div>
+                    
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Telephone
+                                <input type="text" class="form-control moldalFom">
+                                Email
+                                <input type="email" class="form-control moldalFom">
+                                <input type="checkbox" name="" id=""> Check me out
+                            </div>
+                    
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button class="btn btn-warning">Order</button>
+                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="title">
+            <h1>
+                Our Menu
+            </h1>
+        </div>
+        <div class="select-menu">
+            <ul>
+                <li ><a class="px-4 py-2" href="#">All</a></li>
+                <li ><a class="px-4 py-2" href="#">Burger</a></li>
+                <li ><a class="px-4 py-2" href="#">Pizza</a></li>
+                <li ><a class="px-4 py-2" href="#">Pasta</a></li>
+                <li ><a class="px-4 py-2" href="#">Fries</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row g-2">
+            <div class="col-4">
+                <div class="card bg-dark">
+                    <div class="imgF123 py-4">
+                        <img class="card-img-top" src="../images/f1.png" alt="img">
+                    </div>
+                    <div class="card-body text-white">
+                        <h4>Delicious Pizza</h4>
+                        <p>
+                            Veniam debitis quaerat officiis quasi cupiditate 
+                            quo, quisquam velit, magnam voluptatem repellendus
+                            sed eaque
+                        </p>
+                        <span>$20</span>
+                        <i class="fa fa-shopping-cart bg-warning p-2 rounded-circle float-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card bg-dark">
+                    <div class="imgF123 py-4">
+                        <img class="card-img-top" src="../images/f2.png" alt="img">
+                    </div>
+                    <div class="card-body text-white">
+                        <h4>Delicious Pizza</h4>
+                        <p>
+                            Veniam debitis quaerat officiis quasi cupiditate 
+                            quo, quisquam velit, magnam voluptatem repellendus
+                            sed eaque
+                        </p>
+                        <span>$20</span>
+                        <i class="fa fa-shopping-cart bg-warning p-2 rounded-circle float-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card bg-dark">
+                    <div class="imgF123 py-4">
+                        <img class="card-img-top" src="../images/f3.png" alt="img">
+                    </div>
+                    <div class="card-body text-white">
+                        <h4>Delicious Pizza</h4>
+                        <p>
+                            Veniam debitis quaerat officiis quasi cupiditate 
+                            quo, quisquam velit, magnam voluptatem repellendus
+                            sed eaque
+                        </p>
+                        <span>$20</span>
+                        <i class="fa fa-shopping-cart bg-warning p-2 rounded-circle float-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body> 
+</html>
